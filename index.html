@@ -708,8 +708,7 @@
                                                             <div class="heading">
                                                                 <div class="title">
                                                                     <h4>Noblesse Voyages - Accountant</h4>
-                                                                    <span> (June 2021 - Dec 2022
-                                                                2020)</span>
+                                                                    <span> (June 2021 - Dec 2022)</span>
                                                                 </div>
                                                                 <div class="date-of-time">
                                                                     <span>Perfect Contribution</span>
@@ -937,8 +936,8 @@
                                         <div class="col-lg-6 col-md-6 col-12 mt_sm--60">
                                             <div class="progress-wrapper">
                                                 <div class="content">
-                                                    <span class="subtitle">Features</span>
-                                                    <h4 class="maintitle">Soft Skill</h4>
+                                                    <!-- <span class="subtitle">Features</span>
+                                                    <h4 class="maintitle">Soft Skill</h4> -->
                                                     <!-- Start Single Progress Charts -->
                                                     <div class="progress-charts">
                                                         <h6 class="heading heading-h6">Business Analyst</h6>
@@ -1539,26 +1538,19 @@
                         <div class="contact-form-wrapper">
                             <div class="introduce">
 
-                                <form class="rnt-contact-form rwt-dynamic-form row" id="contact-form" method="POST" action="mail.php">
+                                <form class="rnt-contact-form rwt-dynamic-form row" id="contact-form" method="post" netlify>
 
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-12">
                                         <div class="form-group">
                                             <label for="contact-name">Your Name</label>
-                                            <input class="form-control form-control-lg" name="contact-name" id="contact-name" type="text">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label for="contact-phone">Phone Number</label>
-                                            <input class="form-control" name="contact-phone" id="contact-phone" type="text">
+                                            <input class="form-control form-control-lg" name="name" id="contact-name" type="text">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <label for="contact-email">Email</label>
-                                            <input class="form-control form-control-sm" id="contact-email" name="contact-email" type="email">
+                                            <input class="form-control form-control-sm" id="contact-email" name="email" type="email">
                                         </div>
                                     </div>
 
@@ -1572,7 +1564,7 @@
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <label for="contact-message">Your Message</label>
-                                            <textarea name="contact-message" id="contact-message" cols="30" rows="10"></textarea>
+                                            <textarea name="message" id="contact-message" cols="30" rows="10"></textarea>
                                         </div>
                                     </div>
 
@@ -1715,14 +1707,12 @@
                         <!-- Comment Section Area Start -->
                         <div class="comment-inner">
                             <h3 class="title mb--40 mt--50">Leave a Reply</h3>
-                            <form action="#">
+                            <form action="https://fabform.io/f/tI9aEDw" method="post">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12 col-12">
-                                        <div class="rnform-group"><input type="text" placeholder="Name">
+                                        <div class="rnform-group"><input name="fullName" type="text" placeholder="fullName">
                                         </div>
-                                        <div class="rnform-group"><input type="email" placeholder="Email">
-                                        </div>
-                                        <div class="rnform-group"><input type="text" placeholder="Website">
+                                        <div class="rnform-group"><input name="email"  type="email" placeholder="Email">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-12 col-12">
@@ -1731,7 +1721,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
-                                        <a class="rn-btn" href="#"><span>SUBMIT NOW</span></a>
+                                        <button type="submit" class="rn-btn"><span>SUBMIT NOW</span></button>
                                     </div>
                                 </div>
                             </form>

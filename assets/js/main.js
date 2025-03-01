@@ -24,7 +24,7 @@
             imJs.smothScroll_Two();
             imJs.stickyAdjust();
             imJs.testimonialActivation();
-            imJs.contactForm();
+            //imJs.contactForm();
             imJs.wowActive();
             imJs.awsActivation();
             imJs.demoActive();
